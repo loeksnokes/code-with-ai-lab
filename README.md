@@ -10,10 +10,10 @@ How to use
 
 Repository layout
 - /exercises — numbered exercises (each with README, starter code, tests)
-- /solutions — instructor solutions (protected branch)
+- /solutions — instructor solutions (protected branch; keep private if needed)
 - requirements.txt — Python dependencies for exercises
 - README contains course‑specific instructions and how to run tests
 
 Notes for instructors
-- If students cannot push to GitHub, prepare a ZIP for each session and distribute via Teams.
+- If students cannot push to GitHub, prepare a ZIP for each session and distribute via Teams or email.
 - If you want students to submit work, use the alternative submission instructions (upload to Teams or email a ZIP).
