@@ -38,13 +38,6 @@ Success criteria
 
 ---
 
-## Optional: CI / Workflow inspection (if time)
-- Open `.github/workflows/python-tests.yml` and confirm it runs tests on PRs.
-- Locally run the same commands the CI runs: `pip install -r requirements.txt && pytest -q`
-- If comfortable, propose one CI improvement (e.g., add lint stage) and note it in chat.
-
----
-
 ## Facilitator tips
 - Encourage tiny commits so reversion is easy.
 - Coaches should verify the tests exercise behavior meaningfully.
