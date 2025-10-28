@@ -2,7 +2,7 @@
 
 Total time: 20 minutes (two parallel activities) — choose A or B or do both as time allows.
 
-Activity A — Debugging (individual or pairs) — 20 minutes
+Activity Debugging (individual or pairs) — 20 minutes
 Objective: Fix the intentional bug, add a test, and prepare a PR description.
 
 Steps

@@ -39,6 +39,11 @@ How to document AI use (recommended PR template snippet)
 If you cannot open a PR
 - Paste your branch name and the PR description into the Teams chat and a TA/instructor will create the PR for you.
 
+Mini-Projects:
+In `exercises/mini-projects` we have proposed some projects for the attendees to do. Choose which project you'd like to do and follow the instructions in the README.md.
+Instructors will be available to help troubleshoot any issues.
+ 
+
 Links & resources
 - Lab exercises for this session: code-with-ai-lab/exercises/02-debugging and /03-license-check  
 - Copilot docs: https://docs.github.com/en/copilot/getting-started-with-github-copilot  
