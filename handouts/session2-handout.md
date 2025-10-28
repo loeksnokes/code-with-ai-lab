@@ -38,11 +38,11 @@ Make sure you have:
 
 1. **Create a new repo** on GitHub → name it `ai-coding-intro`.  
 2. **Clone** it locally or open directly in VS Code via *Source Control → Clone Repository*.  
-3. Create file hello.py and ask Copilot for a function to greet a name.  
+3. Create file and ask Copilot for a function to generate the fibonacci numbers.  
 4. Commit and push your work to the main branch. You can do this via the terminal with the following:
 ```
 git add .
-git commit -m "Add hello.py"
+git commit -m "Add [file_name].py"
 git push
 ```
 Or this can be done using the VS Code IDE as follows - see image below:
@@ -68,3 +68,6 @@ For making a PR, you can select the PR button on the IDE:
 [def3]: images/vs-code-pr-option.png "PR button"
 
 OR go to the repository on github, go to the branch and make the PR from there. Good practice is to add a succinct title and a clear description. 
+
+Additional links and info:
+ - MIT video and article on version control with Git: https://missing.csail.mit.edu/2020/version-control/
