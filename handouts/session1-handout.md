@@ -2,7 +2,10 @@
 One-page handout
 
 Session: Introduction (60 minutes)  
-Goal: Ground everyone in what AI-assisted coding is, the main tools, and the safe/responsible practices we will use.
+Purpose: Ground everyone in 
+- what AI-assisted coding is, 
+- the main tools, and 
+- the safe/responsible practices we will use.
 
 Quick agenda
 - Welcome & course overview  

@@ -1,8 +1,11 @@
 # Session 2 — Getting Started with AI Coding Tools
 One-page handout
 
-Session: Getting Started with GitHub & Copilot (90 minutes)  
-Goal: Help participants set up GitHub and GitHub Copilot, understand version-control basics, and generate their first AI-assisted code safely.
+Duration: 60 minutes  
+Purpose: Help participants 
+- set up GitHub and GitHub Copilot, 
+- understand version-control basics, and 
+- generate their first AI-assisted code safely.
 
 ---
 

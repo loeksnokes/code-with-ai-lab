@@ -1,4 +1,4 @@
-# Session 4 — Activities (Refactoring & CI)
+# Session 4 — Activities (Refactoring)
 
 Total time: 25 minutes (hands-on refactor) + optional CI inspection.
 
@@ -27,7 +27,7 @@ Steps
    ```
    git checkout -b feat/refactor-string-utils
    git add .
-   git commit -m "Refactor: extract normalize_str helper; add tests"
+   git commit -m "Refactor: extract normalize_str helper; added tests"
    git push -u origin feat/refactor-string-utils
    ```
 8. Open a PR with a clear description and AI assistance note.

@@ -1,7 +1,9 @@
 # Session 3 Quick Handout — Debugging, Collaboration & Responsible Use
 
-Session goals
-- Diagnose and fix bugs using tests + AI-assisted suggestions.
+Duration: 60 + (30-60) minutes (before and after lunch)  
+Purpose: Learn to
+- Diagnose and fix bugs using tests + AI-assisted 
+suggestions.
 - Create and review PRs using a clear checklist.
 - Apply basic license/IP checks and document AI usage.
 

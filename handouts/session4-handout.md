@@ -1,14 +1,14 @@
 # Session 4 — Advanced Workflows (Refactoring, Test Generation & CI)
 
-Duration: 90 minutes  
-Purpose: reference for safe refactoring with AI, generating and validating tests, and using automation to maintain quality.
+Duration: 60 minutes  
+Purpose: reference for safe refactoring with AI, generating and validating tests, and using automation to maintain quality, and basic concepts of continuous integration (CI).
 
 ---
 
 ## Learning objectives
 - Perform small, test-backed refactors safely.  
 - Use AI to propose tests and evaluate them critically.  
-- Add simple CI and pre-commit checks to catch regressions early.
+- Learn to implement simple CI.
 
 ---
 
@@ -21,8 +21,6 @@ Purpose: reference for safe refactoring with AI, generating and validating tests
 4. Make small, atomic changes (one logical change per commit).
 5. Run tests & linters locally after each commit:
    - `pytest -q`
-   - `ruff check .` or `flake8 .` (if configured)
-   - `black --check .` (if configured)
 6. Write a clear PR description describing refactor intent and AI assistance.
 
 ---
@@ -64,14 +62,14 @@ Generate 6 pytest tests for is_prime(n) covering small primes, composites and ed
 ---
 
 ## Automation & CI quick guide
-- Add GitHub Actions to run tests on PRs (see `.github/workflows/python-tests.yml`).
-- Use `pre-commit` hooks locally:
-  - Configure `.pre-commit-config.yaml` with `black`, `ruff`, `isort`.
-  - Install locally: `pip install pre-commit && pre-commit install`.
-- CI tips:
-  - Run `pytest -q` as the core check.
-  - Add a job step for linters to fail fast.
-  - Optionally add a license-scan or dependency-safety step.
+- CI (Continuous Integration) is a practice where developers frequently merge code changes into a central repository, followed by automated builds and tests to catch issues early. 
+  - helps ensure the codebase remains stable, 
+  - allows teams to detect and fix bugs quickly, and 
+  - leads to faster development cycles and more reliable software.
+  - Steps:
+    - Run `pytest -q` as the core check.
+    - Add a job step for linters to fail fast.
+    - Optionally add a license-scan or dependency-safety step.
 
 ---
 
