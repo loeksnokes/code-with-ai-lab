@@ -74,3 +74,8 @@ OR go to the repository on github, go to the branch and make the PR from there. 
 
 Additional links and info:
  - MIT video and article on version control with Git: https://missing.csail.mit.edu/2020/version-control/
+ 
+---
+
+See also
+- Git FAQ (pull vs push, rebase, merge, WIP squashing): [Session 2 — Git FAQ](./session2-git-faq.md)
