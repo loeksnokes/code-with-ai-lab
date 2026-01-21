@@ -6,8 +6,8 @@ def calculate_grade(score: float) -> str:
         score: The numerical score (0-100)
         
     Returns:
-        Letter grade: 'A' (90-100), 'B' (80-89), 'C' (70-79), 
-                      'D' (60-69), 'F' (0-59)
+        Letter grade: 'A' [90-100], 'B' [80-90), 'C' [70-80), 
+                      'D' [60-70), 'F' [0-60]
     """ 
     
     if score >= 90:
