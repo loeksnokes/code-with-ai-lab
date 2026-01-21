@@ -4,7 +4,7 @@ This handout captures Git essentials for the class: key terms (origin, main, loc
 
 ---
 
-## Key Git terms (fast refresher)
+## Key Git terms 
 - origin: The default name Git gives the remote copy of your repository on GitHub.
 - main: The default primary branch (older repos may use master). It’s the branch you typically base work off and into which you merge PRs.
 - Local branch: A branch that exists only on your machine until you publish it. Use local branches to isolate work, keep main clean, and open focused PRs.
@@ -49,6 +49,39 @@ git pull --rebase
 # After committing locally, publish your commits
 git push
 ```
+
+---
+## Day-to-day commit and push
+
+This is the most common git procedure. Commit and push your work to the main branch. You can do this via the terminal with the following:
+```
+git add .
+git commit -m "Add [file_name].py"
+git push
+```
+Or this can be done using the VS Code IDE as follows - see image below:
+1. Select the `+` for files you want to push.
+2. add a commit message - this is a brief message explaining your change (If you want to do commit messages like a software engineer, take a look at this guide on semantic commit messages: https://www.conventionalcommits.org/en/v1.0.0/).
+3. Click commit!
+![alt text][def1]
+
+[def1]: images/handout-vs-code-ide.png "Image of VS Code IDE"
+
+### Making a new branch / pull request
+You can make a new branch from the terminal with the command `git checkout -b <your_branch_name>`. 
+Alternatively, using the IDE we can make a new branch by clicking the branch name:
+![alt text][def2]
+
+[def2]: images/vs-code-branch-option.png "Branch button"
+
+Then, select `+ Create new branch...`
+
+For making a PR, you can select the PR button on the IDE:
+![alt text][def3]
+
+[def3]: images/vs-code-pr-option.png "PR button"
+
+OR go to the repository on github, go to the branch and make the PR from there. Good practice is to add a succinct title and a clear description. 
 
 ---
 
