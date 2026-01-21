@@ -1,4 +1,4 @@
-# Session 2 — Git FAQ (Quick Reference)
+# Session 4 — Git FAQ (Quick Reference)
 
 This handout captures Git essentials for the class: key terms (origin, main, local branches), pull vs push, how and when to merge, what rebase does, how to protect local work during pull, and what “squash WIP commits” means. Assume rebase-on-pull is NOT configured by default; we show how to opt in.
 
