@@ -21,10 +21,10 @@ Quick agenda
 ---
 
 Learning objectives
-- Create and push a repository to GitHub.
-- Enable and configure GitHub Copilot inside VS Code.
-- Use Copilot to scaffold and refine code.
-- Explain how repo visibility and licensing affect data privacy and sharing. 
+- Set up VS Code with AI coding extensions
+- Understand how AI coding assistants work
+- Write your first code with AI assistance
+- Explore AI suggestions and learn to evaluate them critically
 
 ---
 
@@ -37,7 +37,7 @@ Make sure you have:
 
 ---
 
-## Hands-on lab (≈45 minutes)
+## Hands-on lab
 
 1. **Create a new repo** on GitHub → name it `ai-coding-intro`.  
 2. **Clone** it locally or open directly in VS Code via *Source Control → Clone Repository*.  
@@ -56,26 +56,5 @@ Or this can be done using the VS Code IDE as follows - see image below:
 
 [def1]: images/handout-vs-code-ide.png "Image of VS Code IDE"
 
-### Making a new branch / pull request
-You can make a new branch from the terminal with the command `git checkout -b <your_branch_name>`. 
-Alternatively, using the IDE we can make a new branch by clicking the branch name:
-![alt text][def2]
-
-[def2]: images/vs-code-branch-option.png "Branch button"
-
-Then, select `+ Create new branch...`
-
-For making a PR, you can select the PR button on the IDE:
-![alt text][def3]
-
-[def3]: images/vs-code-pr-option.png "PR button"
-
-OR go to the repository on github, go to the branch and make the PR from there. Good practice is to add a succinct title and a clear description. 
-
-Additional links and info:
- - MIT video and article on version control with Git: https://missing.csail.mit.edu/2020/version-control/
- 
----
-
 See also
-- Git FAQ (pull vs push, rebase, merge, WIP squashing): [Session 2 — Git FAQ](./session2-git-faq.md)
+- Git FAQ (pull vs push, rebase, merge, WIP squashing): [Session 4 — Git FAQ](./session4-git-faq.md)
