@@ -1,4 +1,4 @@
-# Root Solver - Task Summary
+# Integer Matrices - Task Summary
 
 Overview
 - Exercise to use GitHub Copilot to explore a mathematics question on matrices.
