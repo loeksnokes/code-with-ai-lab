@@ -3,7 +3,7 @@
 Goal
 - use copilot to generate running code following the markdown descriptions in the iris_analysis.ipynb notebook
 
-For steps 1,2 and 3, some code is already provided to load the data and check it.
+For steps 1, 2 and 3, some code is already provided to load the data and check it.
 
 1. Project setup
     - Install required packages and confirm kernel settings. 
