@@ -6,4 +6,4 @@ def average(values):
     # Bug: integer division-like behaviour
     total = sum(values)
     count = len(values)
-    return total // count  # BUG: using integer division operator
+    return total // count  
