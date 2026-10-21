@@ -47,6 +47,6 @@ Instructors will be available to help troubleshoot any issues.
  
 
 Links & resources
-- Lab exercises for this session: code-with-ai-lab/exercises/02-debugging and /03-license-check  
+- Lab exercises for this session: code-with-ai-lab/exercises/02-debugging and /03-refactoring  
 - Copilot docs: https://docs.github.com/en/copilot/getting-started-with-github-copilot  
 - GitHub PRs: https://docs.github.com/en/pull-requests

@@ -35,27 +35,35 @@ Success criteria
 - Branch contains a clear commit history.
 - PR description includes AI usage note.
 
-Activity B — License & Code Review (small groups) — 20 minutes
-Objective: Practice license detection and produce a short review comment.
+Activity B — Refactoring & Code Review (small groups) — 20 minutes
+Objective: Use AI to remove duplication safely, review its suggestion critically, and produce a short review comment.
 
 Steps
-1. Open `/exercises/03-license-check/`
-2. Imagine an AI suggested a helper function (you will paste a provided example snippet into a temp file).
-3. Search for matching code:
-   - Use a web search (quote a unique string) and GitHub code search for matches.
-4. If a match is found:
-   - Identify license on matching source.
-   - Decide whether the snippet's inclusion has implications (e.g., copyleft).
-5. Write a short review comment (2–4 sentences) addressing:
-   - Is the snippet OK to keep? If not, what action is needed?
-   - If OK, what attribution or documentation is recommended?
-6. Create a brief PR description documenting AI assistance.
+1. Open/extract the lab repo and navigate to:
+   `/exercises/03-refactoring/`
+2. Run the existing tests first to confirm they pass:
+   - Create a venv, install deps, run `pytest -q`
+3. Inspect `string_utils.py`:
+   - Identify the duplicated logic in `shout()` and `whisper()`.
+4. Ask an AI tool for a refactoring suggestion. If using AI:
+   - Paste `string_utils.py` and ask it to remove duplication without changing behaviour.
+   - Ask it to explain each change.
+5. Review the suggestion critically before applying it:
+   - Does it still handle `None`, empty strings and whitespace-only strings?
+   - Is the result clearer, or just shorter?
+6. Apply the refactor and run `pytest -q` — all tests should still pass.
+7. Add at least one test for an edge case the existing tests do not cover (e.g. surrounding whitespace on `whisper`, mixed-case input).
+8. Write a short review comment (2–4 sentences) as if reviewing a teammate's refactor:
+   - Is behaviour preserved? What evidence (tests) supports that?
+   - Any remaining concerns or suggested follow-ups?
+9. Create a brief PR description documenting AI assistance.
 
 Deliverable: one review comment (post in Teams chat) + PR description (post in Teams).
 
 Success criteria
-- Group demonstrates an ability to search & find matches.
-- Comment correctly identifies license implications or recommends escalation.
+- Duplication is removed and all tests pass.
+- Group can explain what the AI changed and why behaviour is preserved.
+- Review comment cites test evidence or identifies a concern.
 
 Facilitator hints
 - If students lack GitHub push access, they can still create a branch locally and paste a zip or PR description into Teams.
