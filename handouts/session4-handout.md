@@ -61,23 +61,44 @@ Generate 6 pytest tests for is_prime(n) covering small primes, composites and ed
 
 ---
 
-## Automation & CI quick guide
-- CI (Continuous Integration) is a practice where developers frequently merge code changes into a central repository, followed by automated builds and tests to catch issues early. 
-  - helps ensure the codebase remains stable, 
-  - allows teams to detect and fix bugs quickly, and 
-  - leads to faster development cycles and more reliable software.
-  - Steps:
-    - Run `pytest -q` as the core check.
-    - Add a job step for linters to fail fast.
-    - Optionally add a license-scan or dependency-safety step.
+## What are plugins?
+
+A plugin is a distributable package that extends an AI agents functionality.
+
+There are many different types of plugin for various tasks, such as:
+
+- **Custom agents** — Specialized AI assistants.
+- **Skills** — Discrete callable capabilities.
+- **Hooks** — Event handlers that intercept agent behavior.
+- **Model Context Protocol configurations** — Configurations that describe how an agent integrates with external tools.
 
 ---
 
-## Practical commands
-- Run tests: `pytest -q`
-- Install pre-commit & run once: `pre-commit run --all-files`
-- Create branch: `git checkout -b feat/refactor-strings`
-- Commit & push: `git add . && git commit -m "Refactor: extract helper; add tests" && git push -u origin feat/refactor-strings`
+## Why should I use plugins?
+
+Plugins provide the following benefits:
+
+- Reusability across projects.
+- Team standardization of configurations.
+- Share domain expertise (for example, by providing the skills of a Python expert, or a Docker expert).
+- Encapsulate complex MCP server setups.
+
+---
+
+## How to install plugins
+
+You can install plugins from:
+
+- A marketplace
+- A repository
+- A local path
+
+A marketplace is a location where developers can publish, discover, install, and manage plugins. It's a bit like an app store—but for plugins. Examples of marketplaces include:
+
+- [copilot-plugins](https://github.com/github/copilot-plugins)
+- [awesome-copilot](https://github.com/github/awesome-copilot)
+- [claude-code-plugins](https://github.com/anthropics/claude-code)
+- [claudeforge-marketplace](https://github.com/claudeforge/marketplace)
 
 ---
 

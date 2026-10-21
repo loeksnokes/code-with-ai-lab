@@ -25,7 +25,7 @@ Steps
 6. Add/modify tests under `test_string_utils.py` to ensure identical behavior.
 7. Commit & push:
    ```
-   git checkout -b feat/refactor-string-utils
+   git switch -c feat/refactor-string-utils
    git add .
    git commit -m "Refactor: extract normalize_str helper; added tests"
    git push -u origin feat/refactor-string-utils

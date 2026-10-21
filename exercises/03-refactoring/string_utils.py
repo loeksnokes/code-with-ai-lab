@@ -7,6 +7,7 @@ def shout(s):
         return ""
     return s2.upper() + "!"
 
+
 def whisper(s):
     if s is None:
         return ""
