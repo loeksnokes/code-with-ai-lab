@@ -1,43 +1,43 @@
-# Session 4 — Advanced Workflows (Refactoring, Test Generation & CI)
+# Session 4 — Advanced Workflows (Test-Driven Development, Test Generation & CI)
 
 Duration: 60 minutes  
-Purpose: reference for safe refactoring with AI, generating and validating tests, and using automation to maintain quality, and basic concepts of continuous integration (CI).
+Purpose: reference for test-driven development (TDD) with AI, generating and validating tests, and using automation to maintain quality, and basic concepts of continuous integration (CI).
 
 ---
 
 ## Learning objectives
-- Perform small, test-backed refactors safely.  
+- Use the red, green, refactor cycle to drive code changes from tests.  
 - Use AI to propose tests and evaluate them critically.  
 - Learn to implement simple CI.
 
 ---
 
-## Refactor checklist (use before you change code)
-1. Ensure baseline tests exist and run:
+## TDD checklist (use before you change code)
+1. Run the existing tests and note which fail (red):
    - `pytest -q`
-2. Add extra tests for uncovered behavior (if coverage is low).
-3. Create a feature branch:
-   - `git checkout -b feat/refactor-<short>`
-4. Make small, atomic changes (one logical change per commit).
-5. Run tests & linters locally after each commit:
+2. Create a feature branch:
+   - `git checkout -b feat/tdd-<short>`
+3. Write or pick one failing test that describes the behavior you want.
+4. Write the smallest change that makes it pass (green).
+5. Refactor with the tests green; run tests after each change:
    - `pytest -q`
-6. Write a clear PR description describing refactor intent and AI assistance.
+6. Make small, atomic commits (one logical change per commit).
+7. Write a clear PR description describing intent and AI assistance.
 
 ---
 
-## AI-assisted refactoring pattern
-- Step 1: Ask AI for a minimal refactor suggestion (paste duplicative functions only).  
-- Step 2: Request rationale and possible edge cases impacted by refactor.  
-- Step 3: Implement suggested extraction or consolidation manually (do not accept a full automated rewrite blindly).  
-- Step 4: Add tests to verify behavior remains the same.  
+## AI-assisted TDD pattern
+- Step 1: Paste the failing test and the function, and ask AI for the minimal change only.  
+- Step 2: Request rationale and possible edge cases the test does not cover.  
+- Step 3: Implement the change yourself (do not accept a full automated rewrite blindly).  
+- Step 4: Write each new test first and watch it fail before fixing the code.  
 - Step 5: Run tests and add minimal documentation in PR.
 
 Prompt example:
 ```
-Given these two functions, suggest a small refactor to remove duplication while preserving behavior.
-Function A: ...
-Function B: ...
-Also list edge cases I should test.
+Here is a failing test and the function under test.
+Suggest the smallest change that makes the test pass without breaking the others.
+Also list edge cases I should write tests for next.
 ```
 
 ---
@@ -56,7 +56,7 @@ Also list edge cases I should test.
 
 Example request:
 ```
-Generate 6 pytest tests for is_prime(n) covering small primes, composites and edge cases.
+Generate 6 pytest tests for calculate_grade(score) covering grade boundaries and out-of-range scores.
 ```
 
 ---
@@ -110,12 +110,10 @@ A marketplace is a location where developers can publish, discover, install, and
 
 ---
 
-## Quick sample: refactoring string_utils
-Before: two functions with identical pre-checks (strip/empty).  
-Refactor idea:
-- Extract `normalize_str(s)` helper that returns `""` or stripped text.
-- Use helper in both `shout` and `whisper`.
-Add tests to ensure identical behavior post-change.
+## Quick sample: TDD with calculate_grade
+Red: `test_calculate_grade_below_0` and `test_calculate_grade_above_100` fail because no error is raised.  
+Green: add the smallest check, e.g. raise `ValueError` when `score < 0 or score > 100`.  
+Next: write a failing test for a boundary (e.g. 89.9 is a `B`), fix, then refactor with tests green.
 
 ---
 

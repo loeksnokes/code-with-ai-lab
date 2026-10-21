@@ -9,7 +9,7 @@ Steps
 1. Open/extract the lab repo and navigate to:
    `/exercises/02-debugging/`
 2. Reproduce failing tests:
-   - Create a venv, install deps, run `pytest -q`
+   - Activate the shared `.venv` from the repo root (see `exercises/01-intro-python/README.md`), then run `pytest -q`
 3. Diagnose:
    - Read the failing test & stack trace.
    - Open `buggy_calc.py`.
@@ -42,7 +42,7 @@ Steps
 1. Open/extract the lab repo and navigate to:
    `/exercises/03-refactoring/`
 2. Run the existing tests first to confirm they pass:
-   - Create a venv, install deps, run `pytest -q`
+   - Activate the shared `.venv` from the repo root (see `exercises/01-intro-python/README.md`), then run `pytest -q`
 3. Inspect `string_utils.py`:
    - Identify the duplicated logic in `shout()` and `whisper()`.
 4. Ask an AI tool for a refactoring suggestion. If using AI:

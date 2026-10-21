@@ -1,9 +1,13 @@
-Exercise 05 — Test-Driven Development: Implement `is_prime`
+# Exercise 04 — Test-Driven Development: `calculate_grade`
 
-Goal
-- Implement the function `is_prime(n: int) -> bool` using TDD practices.
-- Tests are provided; write minimal code to satisfy tests iteratively.
+## Goal
 
-Instructions
-1. Run `pytest -q` to see failing tests.
-2. Implement `is_prime` in `primes.py`, run tests, iterate until all pass.
+- Use TDD (red, green, refactor) to finish `calculate_grade(score)` in `calculate_grade.py`.
+- Tests are provided; write minimal code to satisfy them iteratively, then add your own tests first.
+
+## Instructions
+
+1. Run `pytest -q` to see the failing tests (scores below 0 and above 100 should raise `ValueError`).
+2. Make each failing test pass with the smallest change, running the tests after each one.
+3. Write new tests for boundary scores (e.g. 59.9, 60, 89.9, 90) and invalid input, and watch each fail before fixing the code.
+4. Refactor with all tests green.

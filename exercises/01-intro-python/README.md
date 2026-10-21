@@ -9,8 +9,9 @@
 
 ### Setup local environment
 
-Create a Python virtual environment and install the dependencies using the
-following steps, unless you have done this already:
+Create one Python virtual environment, named `.venv`, **in the repository root**
+and install the dependencies using the following steps, unless you have done
+this already. All later exercises and activities reuse this environment:
 
 #### macOS and Linux
 
@@ -24,7 +25,7 @@ pip install -r requirements.txt
 
 ```bash
 python -m venv .venv
-source .venv\Scripts\activate.bat
+.venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
 
